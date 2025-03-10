@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://b3gxnbhxmg7nd"]
+
+[ext_resource type="Texture2D" uid="uid://xm27godwg1lc" path="res://src/pieces/queen/queen.png" id="1_5xoj0"]
+[ext_resource type="Script" uid="uid://c1e87u55shg0m" path="res://src/pieces/queen/queen.gd" id="1_wwh4m"]
+
+[node name="Queen" type="Node2D"]
+script = ExtResource("1_wwh4m")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+position = Vector2(0, -8)
+texture = ExtResource("1_5xoj0")

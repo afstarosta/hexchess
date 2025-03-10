@@ -1,0 +1,36 @@
+[gd_scene load_steps=8 format=3 uid="uid://dbv2at03ehkgi"]
+
+[ext_resource type="Script" uid="uid://d3ravul8ynoa0" path="res://src/plays/move_play.gd" id="1_0t2vf"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_extco"]
+load_path = "res://.godot/imported/play_preview.png-aa86cd0ccb221b2c5f22d923edaab4ca.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0t2vf"]
+atlas = SubResource("CompressedTexture2D_extco")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_h41ue"]
+load_path = "res://.godot/imported/play_preview.png-aa86cd0ccb221b2c5f22d923edaab4ca.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o8632"]
+atlas = SubResource("CompressedTexture2D_h41ue")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ovt8s"]
+load_path = "res://.godot/imported/play_preview.png-aa86cd0ccb221b2c5f22d923edaab4ca.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_clasj"]
+atlas = SubResource("CompressedTexture2D_ovt8s")
+region = Rect2(32, 64, 32, 32)
+
+[node name="MovePlay" type="Node2D"]
+script = ExtResource("1_0t2vf")
+
+[node name="TextureButton" type="TextureButton" parent="."]
+offset_left = -16.0
+offset_top = -16.0
+offset_right = 16.0
+offset_bottom = 16.0
+texture_normal = SubResource("AtlasTexture_0t2vf")
+texture_pressed = SubResource("AtlasTexture_o8632")
+texture_hover = SubResource("AtlasTexture_clasj")

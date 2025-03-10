@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://bfnat745wdia7"]
+
+[ext_resource type="Script" uid="uid://c1btib16vri5d" path="res://src/pieces/rook/rook.gd" id="1_hjidq"]
+[ext_resource type="Texture2D" uid="uid://71ib7647fdmu" path="res://src/pieces/rook/rook.png" id="2_kf771"]
+
+[node name="Rook" type="Node2D"]
+script = ExtResource("1_hjidq")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+position = Vector2(0, -8)
+texture = ExtResource("2_kf771")

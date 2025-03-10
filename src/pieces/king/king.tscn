@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://bs3ovqd7grhx8"]
+
+[ext_resource type="Script" uid="uid://ckrotuiwl6ifg" path="res://src/pieces/king/king.gd" id="1_b2ywo"]
+[ext_resource type="Texture2D" uid="uid://dhbum4whngj3" path="res://src/pieces/king/king.png" id="2_3lij2"]
+
+[node name="King" type="Node2D"]
+script = ExtResource("1_b2ywo")
+limited_move = true
+
+[node name="Sprite" type="Sprite2D" parent="."]
+position = Vector2(0, -8)
+texture = ExtResource("2_3lij2")
